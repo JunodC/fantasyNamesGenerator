@@ -42,7 +42,7 @@ def generate_many(info, nb, savefile=''):
         n=generate_word(info)
         print(n)
         if(savefile!=''):
-            with open(savefile,'a+') as f:
+            with open(savefile,'a+', encoding="utf8") as f:
                 f.write(n+'\n')
 
 #wrapper for generate_many(), needs the source file instead of the info          
